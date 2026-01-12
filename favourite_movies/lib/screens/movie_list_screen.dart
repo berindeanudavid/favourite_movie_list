@@ -25,6 +25,21 @@ class _MovieListScreenState extends State<MovieListScreen> {
       description: 'Reality is not what it seems.',
       imageUrl: 'https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_.jpg',
     ),
+    Movie(
+      title: 'Sami Pop',
+      description: 'You don\'t call me godfather...',
+      imageUrl: 'https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
+    ),
+    Movie(
+      title: 'Timi Adam',
+      description: 'Mossad. Never Forgive. Never Forget.',
+      imageUrl: 'https://m.media-amazon.com/images/M/MV5BNjQzZDc5YzYtYzdkMy00NmQ0LWI0ODctZjFhMzQ4ZDMyMDA5XkEyXkFqcGc@._V1_.jpg',
+    ),
+    Movie(
+      title: 'Schindler\'s List',
+      description: 'In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.',
+      imageUrl: 'https://m.media-amazon.com/images/M/MV5BNjM1ZDQxYWUtMzQyZS00MTE1LWJmZGYtNGUyNTdlYjM3ZmVmXkEyXkFqcGc@._V1_.jpg',
+    ),
   ];
 
   @override
