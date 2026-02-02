@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/movie.dart';
+import 'flexible_image.dart';
 
 class MovieCard extends StatelessWidget {
   final Movie movie;
@@ -31,31 +32,16 @@ class MovieCard extends StatelessWidget {
             children: [
               ClipRRect(
                 borderRadius: BorderRadius.circular(8),
-                child: movie.imageUrl.startsWith('assets/')
-                    ? Image.asset(
-                        movie.imageUrl,
-                        width: 80,
-                        height: 120,
-                        fit: BoxFit.cover,
-                      )
-                    : Image.network(
-                        movie.imageUrl,
-                        width: 80,
-                        height: 120,
-                        fit: BoxFit.cover,
-                        errorBuilder: (context, error, stackTrace) => Container(
-                          width: 80,
-                          height: 120,
-                          color: Colors.grey[200],
-                          child: const Icon(
-                            Icons.broken_image,
-                            color: Colors.grey,
-                          ),
-                        ),
-                      ),
+                child: FlexibleImage(
+                  movie.imageUrl,
+                  width: 80,
+                  height: 120,
+                  fit: BoxFit.cover,
+                ),
               ),
               const SizedBox(width: 12),
-              Expanded(
+              Flexible(
+                fit: FlexFit.tight,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -66,6 +52,8 @@ class MovieCard extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         color: Theme.of(context).textTheme.bodyLarge?.color,
                       ),
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
                     ),
                     const SizedBox(height: 6),
                     Text(
@@ -78,6 +66,8 @@ class MovieCard extends StatelessWidget {
                 ),
               ),
               IconButton(
+                iconSize: 22,
+                constraints: const BoxConstraints(minWidth: 40, minHeight: 40),
                 icon: Icon(
                   isFavorite ? Icons.star : Icons.star_border,
                   color: isFavorite ? Colors.amber : Colors.grey,
