@@ -17,6 +17,11 @@ This README was enhanced to follow project submission checklist guidance (app ti
 
 ## Screenshots
 
+### MOVIE LIST
 ![movies_list.jpg](./repo-assets/movies_list.jpg)
+
+### MOVIE DETAILS
 ![movie_details.jpg](./repo-assets/movie_details.jpg)
-![favourite_movies.jpg](./assets/favourite_movies.jpg)
+
+### FAVOURITE MOVIES
+![favourite_movies.jpg](./repo-assets/favourite_movies.jpg)
