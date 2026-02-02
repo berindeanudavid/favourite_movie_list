@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/movie_list_screen.dart';
+import 'common/strings.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Movies',
+      title: AppStrings.appTitle,
       home: MovieListScreen(),
     );
   }

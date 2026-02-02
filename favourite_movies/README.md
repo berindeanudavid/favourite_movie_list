@@ -1,16 +1,21 @@
-# favourite_movies
+# Favourite Movies
 
-A new Flutter project.
+A simple Flutter app to browse a list of favorite movies.
 
-## Getting Started
+## What it contains
 
-This project is a starting point for a Flutter application.
+- Project structure: `lib/models`, `lib/screens`, `lib/widgets`, `lib/data`, `lib/common`
+- Sample movie data in `lib/data/movies.dart`
+- UI strings centralized in `lib/common/strings.dart`
 
-A few resources to get you started if this is your first Flutter project:
+## Run
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. flutter pub get
+2. flutter run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This README was enhanced to follow project submission checklist guidance (app title, short description, and where to place screenshots).
+
+## Screenshots
+
+![movies_list.jpg](./repo-assets/movies_list.jpg)
+![movie_details.jpg](./repo-assets/movie-details.jpg)

@@ -13,7 +13,26 @@ class MovieDetailScreen extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image.network(movie.imageUrl),
+          movie.imageUrl.startsWith('assets/')
+              ? Image.asset(
+                  movie.imageUrl,
+                  width: double.infinity,
+                  fit: BoxFit.cover,
+                )
+              : Image.network(
+                  movie.imageUrl,
+                  width: double.infinity,
+                  fit: BoxFit.cover,
+                  errorBuilder: (context, error, stackTrace) => Container(
+                    height: 200,
+                    color: Colors.grey[200],
+                    child: const Icon(
+                      Icons.broken_image,
+                      size: 64,
+                      color: Colors.grey,
+                    ),
+                  ),
+                ),
           Padding(
             padding: const EdgeInsets.all(16),
             child: Text(

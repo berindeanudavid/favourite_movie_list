@@ -1,0 +1,1 @@
+Place app images for the README or app here. This folder is referenced in pubspec.yaml as assets/images/
